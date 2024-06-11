@@ -1,0 +1,13 @@
+<h2>All Cards!</h2>
+<div class="card-container">
+  <div class="card" *ngFor="let card of allVendors">
+    <h2>{{ card.username }}</h2>
+    <ul>
+      <li *ngFor="let item of card.catalogs">
+        {{ item.slug }}
+      </li>
+    </ul>
+  </div>
+</div>
+
+  
